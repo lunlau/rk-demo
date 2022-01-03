@@ -1,0 +1,12 @@
+---
+grpc:
+  - name: greeter                   # Name of grpc entry
+    port: 8080                      # Port of grpc entry
+    enabled: true                   # Enable grpc entry
+    commonService:
+      enabled: true                 # Enable common service for testing
+    prom:
+      enabled: true                 # Enable prometheus client
+    interceptors:
+      metricsProm:
+        enabled: true               # Enable prometheus interceptor
